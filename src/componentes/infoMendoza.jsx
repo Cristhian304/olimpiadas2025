@@ -1,13 +1,16 @@
 import React from "react";
 import "../estilos/estilosInfo.css";
 
-const InfoMendoza = () => {
+const InfoMendoza = ({onVolver}) => {
   return (
     <div className="contenedor-info">
       <div className="menu-lateral">
         <div className="icono-carrito">🛒</div>
         <div className="texto-carrito">Ver Carrito</div>
         <div className="texto-pendientes">Pedidos Pendientes</div>
+        <button className="btn-volver" onClick={() => onVolver && onVolver()}>
+          Volver a Productos
+        </button>
       </div>
 
       <div className="contenido-info">
@@ -37,7 +40,7 @@ const InfoMendoza = () => {
           <div className="col-der">
             <h2>Mendoza</h2>
             <hr />
-            <p className="precio"><strong>Precio: </strong>$769.644</p>
+            <p className="precio"><strong>Precio final: </strong>$504.357,84</p>
             <button className="btn-carrito">Añadir al Carrito</button>
             <div className="formas-pago">
               <p><strong>Formas de pago</strong></p>

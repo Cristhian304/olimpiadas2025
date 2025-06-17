@@ -1,13 +1,16 @@
 import React from "react";
 import "../estilos/estilosInfo.css";
 
-const InfoBrc = () => {
+const InfoBrc = ({onVolver}) => {
   return (
     <div className="contenedor-info">
       <div className="menu-lateral">
         <div className="icono-carrito">🛒</div>
         <div className="texto-carrito">Ver Carrito</div>
         <div className="texto-pendientes">Pedidos Pendientes</div>
+        <button className="btn-volver" onClick={() => onVolver && onVolver()}>
+          Volver a Productos
+        </button>
       </div>
 
       <div className="contenido-info">
@@ -37,17 +40,13 @@ const InfoBrc = () => {
           <div className="col-der">
             <h2>Bariloche</h2>
             <hr />
-            <p className="precio"><strong>Precio: </strong>$819.144</p>
+            <p className="precio"><strong>Precio final: </strong>$584.886,96</p>
             <button className="btn-carrito">Añadir al Carrito</button>
             <div className="formas-pago">
               <p><strong>Formas de pago</strong></p>
               <ul>
                 <li>Tarjeta de crédito</li>
                 <li>Tarjeta de débito</li>
-                <li>Dos tarjetas</li>
-                <li>Transferencia / Depósito</li>
-                <li>Múltiples medios (pago offline)</li>
-                <li>Cuota Simple</li>
               </ul>
             </div>
           </div>

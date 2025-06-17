@@ -18,17 +18,21 @@ function App() {
     setPantalla(destino);
   };
 
+  const handleVolver = () => {
+    setPantalla("productos");
+  };
+
   if (!logueado) {
     return <Login onLogin={handleLogin} />;
   }
 
   switch (pantalla) {
     case "infoBrc":
-      return <InfoBrc />;
+      return <InfoBrc onVolver={handleVolver} />;
     case "infoMendoza":
-      return <InfoMendoza />;
+      return <InfoMendoza onVolver={handleVolver} />;
     case "infoCordoba":
-      return <InfoCordoba />;
+      return <InfoCordoba onVolver={handleVolver} />;
     default:
       return <ClienteProductos onSeleccionar={handleSeleccionarDestino} />;
   }

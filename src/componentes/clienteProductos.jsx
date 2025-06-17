@@ -47,7 +47,7 @@ const ClienteProductos = ({ onSeleccionar }) => {
             </div>
             <div className="precio-vermas">
               <p className="precio-final">
-                <strong>Precio Final:</strong><br />{item.precio}
+                <strong>Precio:</strong><br />{item.precio}
               </p>
               <button
                 className="btn-vermas"

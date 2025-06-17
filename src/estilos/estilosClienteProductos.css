@@ -86,3 +86,17 @@ html, body {
 .btn-vermas:hover {
   background-color: #1565c0;
 }
+.btn-volver {
+  margin-top: 20px;
+  padding: 8px 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-volver:hover {
+  background-color: #1565c0;
+}
