@@ -54,7 +54,7 @@ body {
   top: 10px;
   right: 20px;
   font-style: italic;
-  color: #333;
+  color: #fff;
 }
 
 .titulo-pendientes {
@@ -75,20 +75,37 @@ body {
 .tarjeta-pendiente {
   background-color: #ddd;
   border-radius: 20px;
+  padding: 20px 30px;
+  margin-bottom: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
-  margin-bottom: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .tarjeta-pendiente h2 {
-  margin: 0 0 10px;
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.detalle-pendiente {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detalle-pendiente p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.detalle-pendiente strong {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .btn-cancelar {
-  background-color: #d32f2f;
+  background-color: #1976d2;
   color: white;
   border: none;
   padding: 6px 12px;
@@ -98,5 +115,5 @@ body {
 }
 
 .btn-cancelar:hover {
-  background-color: #b71c1c;
+  background-color: #125ca1;
 }

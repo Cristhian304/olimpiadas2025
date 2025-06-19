@@ -1,13 +1,15 @@
 import React from "react";
 import "../estilos/estilosInfo.css";
 
-const InfoBrc = ({onVolver,irAlCarrito,onAgregar}) => {
+const InfoBrc = ({onVolver,irAlCarrito,onAgregar,irAPendientes}) => {
   return (
     <div className="contenedor-info">
       <div className="menu-lateral">
         <div className="icono-carrito">🛒</div>
         <button className="boton-estandar" onClick={irAlCarrito}>Ver Carrito</button>
-        <div className="texto-pendientes">Pedidos Pendientes</div>
+        <button className="btn-vermas" onClick={irAPendientes}>
+            Paquetes Pendientes
+        </button>
         <button className="btn-volver" onClick={() => onVolver && onVolver()}>
           Volver a Productos
         </button>

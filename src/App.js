@@ -67,6 +67,7 @@ function App() {
         }
         onVolver={volverAProductos}
         irAlCarrito={irAlCarrito}
+        irAPendientes={irAPendientes}
       />
     );
   }
@@ -85,6 +86,7 @@ function App() {
         }
         onVolver={volverAProductos}
         irAlCarrito={irAlCarrito}
+        irAPendientes={irAPendientes}
       />
     );
   }
@@ -103,6 +105,7 @@ function App() {
         }
         onVolver={volverAProductos}
         irAlCarrito={irAlCarrito}
+        irAPendientes={irAPendientes}
       />
     );
   }
@@ -114,6 +117,7 @@ function App() {
         onVolver={volverAProductos}
         onEliminar={eliminarDelCarrito}
         onFinalizarCompra={finalizarCompra}
+        irAPendientes={irAPendientes}
       />
     );
   }

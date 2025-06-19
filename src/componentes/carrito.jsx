@@ -2,7 +2,7 @@ import React from "react";
 import "../estilos/estilosCarrito.css";
 import Swal from "sweetalert2";
 
-const Carrito = ({ productos, onVolver, onEliminar }) => {
+const Carrito = ({ productos, onVolver, onEliminar, irAPendientes }) => {
   const total = productos.reduce((acc, prod) => acc + prod.precio, 0);
 
   const registrarPaquetesPendientes = () => {
@@ -55,7 +55,9 @@ const Carrito = ({ productos, onVolver, onEliminar }) => {
     <div className="contenedor-principal">
       <aside className="menu-lateral">
         <div className="icono-carrito">🛒</div>
-        <p className="texto-pendientes">Pedidos Pendientes</p>
+        <button className="btn-vermas" onClick={irAPendientes}>
+            Paquetes Pendientes
+        </button>
         <button className="btn-volver" onClick={onVolver}>
           Volver a Productos
         </button>

@@ -25,13 +25,15 @@ const destinos = [
   },
 ];
 
-const ClienteProductos = ({ onSeleccionar, irAlCarrito }) => {
+const ClienteProductos = ({ onSeleccionar, irAlCarrito, irAPendientes }) => {
   return (
     <div className="contenedor-principal">
       <aside className="menu-lateral">
         <div className="icono-carrito">🛒</div>
         <button className="boton-estandar" onClick={irAlCarrito}>Ver Carrito</button>
-        <p className="texto-pendientes">Pedidos Pendientes</p>
+        <button className="btn-vermas" onClick={irAPendientes}>
+            Paquetes Pendientes
+        </button>
       </aside>
 
       <main className="contenido">
