@@ -1,12 +1,13 @@
 import React from "react";
 import "../estilos/estilosInfo.css";
+import Swal from "sweetalert2";
 
-const InfoMendoza = ({onVolver}) => {
+const InfoMendoza = ({onVolver,irAlCarrito,onAgregar}) => {
   return (
     <div className="contenedor-info">
       <div className="menu-lateral">
         <div className="icono-carrito">🛒</div>
-        <div className="texto-carrito">Ver Carrito</div>
+        <button className="boton-estandar" onClick={irAlCarrito}>Ver Carrito</button>
         <div className="texto-pendientes">Pedidos Pendientes</div>
         <button className="btn-volver" onClick={() => onVolver && onVolver()}>
           Volver a Productos
@@ -41,7 +42,7 @@ const InfoMendoza = ({onVolver}) => {
             <h2>Mendoza</h2>
             <hr />
             <p className="precio"><strong>Precio final: </strong>$504.357,84</p>
-            <button className="btn-carrito">Añadir al Carrito</button>
+            <button className="btn-carrito" onClick={onAgregar}>Añadir al Carrito</button>
             <div className="formas-pago">
               <p><strong>Formas de pago</strong></p>
               <ul>

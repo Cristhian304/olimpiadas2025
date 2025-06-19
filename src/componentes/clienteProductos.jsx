@@ -25,18 +25,19 @@ const destinos = [
   },
 ];
 
-const ClienteProductos = ({ onSeleccionar }) => {
+const ClienteProductos = ({ onSeleccionar, irAlCarrito }) => {
   return (
     <div className="contenedor-principal">
       <aside className="menu-lateral">
         <div className="icono-carrito">🛒</div>
-        <p className="texto-carrito">Ver Carrito</p>
+        <button className="boton-estandar" onClick={irAlCarrito}>Ver Carrito</button>
         <p className="texto-pendientes">Pedidos Pendientes</p>
       </aside>
 
       <main className="contenido">
         <div className="bienvenida">Bienvenido, Usuario</div>
 
+        {/* tarjetas */}
         {destinos.map((item, index) => (
           <div key={index} className="tarjeta">
             <div className="info">
