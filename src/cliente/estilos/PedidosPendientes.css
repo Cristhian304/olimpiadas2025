@@ -1,0 +1,35 @@
+.contenedor-pedidos {
+  padding: 2rem;
+  background: #f9f9f9;
+}
+
+.pedido-card {
+  background: white;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 2px 4px 12px rgba(0,0,0,0.1);
+}
+
+.acciones {
+  margin-top: 1rem;
+}
+
+.btn-aceptar, .btn-anular {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-aceptar {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-anular {
+  background-color: #f44336;
+  color: white;
+}

@@ -1,0 +1,70 @@
+.contenedor-tabla {
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  height: 90vh;
+  overflow: hidden;
+}
+
+.tabla-scroll {
+  max-height: 70vh;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #246785;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.botones {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.editar, .eliminar {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.editar {
+  background-color: #5bc0de;
+  color: white;
+}
+
+.editar:hover {
+  background-color: #31b0d5;
+  transform: scale(1.05);
+}
+
+.eliminar {
+  background-color: #d9534f;
+  color: white;
+}
+
+.eliminar:hover {
+  background-color: #c9302c;
+  transform: scale(1.05);
+}
