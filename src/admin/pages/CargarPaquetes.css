@@ -1,0 +1,85 @@
+/* src/pages/CargarPaquetes.css */
+
+.admin-container {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.main-formulario {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 14px;
+}
+
+.form-box {
+  background-color: #f0f0f0;
+  padding: 30px;
+  border-radius: 15px;
+  width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.field input,
+.field textarea {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.full {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  background-color: #1b5a70;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #144655;
+}
