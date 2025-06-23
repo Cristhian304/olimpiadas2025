@@ -83,3 +83,6 @@
 .button-container button:hover {
   background-color: #144655;
 }
+textarea{
+  resize: none;
+}
