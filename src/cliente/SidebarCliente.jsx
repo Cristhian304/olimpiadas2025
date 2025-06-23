@@ -5,7 +5,7 @@ export default function SidebarCliente() {
     <div style={{
       backgroundColor: "#F0F8FF",
       padding: "2rem",
-      height: "350vh",
+      height: "399vh",
       width: "250px",
       borderRight: "1px solid #ccc",
       overflowY: "auto"

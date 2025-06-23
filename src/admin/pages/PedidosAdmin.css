@@ -1,0 +1,74 @@
+
+.pedidos-admin-container {
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pedidos-titulo {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.tabla-pedidos-container {
+  overflow-x: auto;
+}
+
+.tabla-pedidos {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.tabla-pedidos th, 
+.tabla-pedidos td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+.tabla-pedidos th {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+.lista-paquetes {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-paquetes li {
+  margin-bottom: 4px;
+}
+
+.btn-entregar {
+  padding: 8px 16px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-entregar:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+.loading-spinner,
+.no-pedidos {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+}
+
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  padding: 1rem;
+}
